@@ -12,7 +12,9 @@
 package org.usfirst.frc4929.defensebreakertest.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
+
 import org.usfirst.frc4929.defensebreakertest.Robot;
+import org.usfirst.frc4929.defensebreakertest.subsystems.ShooterLift;
 
 /**
  *
@@ -40,7 +42,11 @@ public class  LiftShooter extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return Robot.shooterLift.upperlimit();
+        if (Robot.shooterLift.currentPosition() == ShooterLift.upperLimit) {
+        	return true;
+        } else {
+        	return false;
+        }
     }
 
     // Called once after isFinished returns true
