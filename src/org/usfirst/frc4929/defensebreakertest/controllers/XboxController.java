@@ -2,7 +2,7 @@ package org.usfirst.frc4929.defensebreakertest.controllers;
 
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.GenericHID;
-
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
 import edu.wpi.first.wpilibj.parsing.IInputOutput;
 
 public class XboxController  extends GenericHID implements IInputOutput {
@@ -196,6 +196,32 @@ public class XboxController  extends GenericHID implements IInputOutput {
 		
 		public boolean getYButton() {
 			return getButton(ButtonType.kY);//BA 16:35
+		}
+
+		
+		public JoystickButton getLTriggerButtonRef() {
+			//return getButton(ButtonType.kY);
+			return new JoystickButton(this, ButtonType.kLTrigger_val);
+		}
+		
+		public JoystickButton getRTriggerButtonRef() {
+			//return getButton(ButtonType.kY);
+			return new JoystickButton(this, ButtonType.kRTrigger_val);
+		}
+
+		public JoystickButton getBButtonRef() {
+			//return getButton(ButtonType.kB);
+			return new JoystickButton(this, ButtonType.kB_val);
+		}
+		
+		public JoystickButton getAButtonRef() {
+			//return getButton(ButtonType.kA);
+			return new JoystickButton(this, ButtonType.kA_val);
+		}
+
+		public JoystickButton getXButtonRef() {
+			//return getButton(ButtonType.kX);
+			return new JoystickButton(this, ButtonType.kX_val);
 		}
 
 		public double getTwist() {
