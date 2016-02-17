@@ -41,7 +41,7 @@ public class Robot extends IterativeRobot {
 
     public static double gatherSpeed = new Double(0.20).doubleValue();
     public static double shootSpeed = new Double(0.90).doubleValue();
-    public static double liftSpeed = new Double(0.125).doubleValue();
+    public static double liftSpeed = new Double(0.0625).doubleValue();
     /**
      * This function is run when the robot is first started up and should be
      * used for any initialization code.

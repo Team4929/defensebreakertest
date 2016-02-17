@@ -42,11 +42,11 @@ public class  LowerShooter extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        if (Robot.shooterLift.currentPosition() == ShooterLift.lowerLimit) {
-        	return true;
-        } else {
+        //if (Robot.shooterLift.currentPosition() == ShooterLift.lowerLimit) {
+       // 	return true;
+       // } else {
         	return false;
-        }
+       // }
     }
 
     // Called once after isFinished returns true

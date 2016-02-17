@@ -76,7 +76,7 @@ public class RobotMap {
         
         
         
-        shooterLiftliftmotor = new Victor(8);
+        shooterLiftliftmotor = new Victor(5);
         LiveWindow.addActuator("Shooter Lift", "lift motor", (Victor) shooterLiftliftmotor);
         
  

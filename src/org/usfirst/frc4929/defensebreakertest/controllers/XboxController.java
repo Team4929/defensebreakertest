@@ -199,14 +199,14 @@ public class XboxController  extends GenericHID implements IInputOutput {
 		}
 
 		
-		public JoystickButton getLTriggerButtonRef() {
+		public JoystickButton getRButtonRef() {
 			//return getButton(ButtonType.kY);
-			return new JoystickButton(this, ButtonType.kLTrigger_val);
+			return new JoystickButton(this, ButtonType.kR_val);
 		}
 		
-		public JoystickButton getRTriggerButtonRef() {
+		public JoystickButton getLButtonRef() {
 			//return getButton(ButtonType.kY);
-			return new JoystickButton(this, ButtonType.kRTrigger_val);
+			return new JoystickButton(this, ButtonType.kL_val);
 		}
 
 		public JoystickButton getBButtonRef() {
