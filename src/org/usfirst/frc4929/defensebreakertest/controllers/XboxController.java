@@ -39,18 +39,18 @@ public class XboxController  extends GenericHID implements IInputOutput {
 	public static class ButtonType {
 			
 		public final int value;
-		private static final int kA_val = 1;
-		private static final int kB_val = 2;
-		private static final int kX_val = 3;
-		private static final int kY_val = 4;
-		private static final int kL_val = 5;
-		private static final int kR_val = 6;
-		private static final int kBack_val = 7;
-		private static final int kStart_val = 8;
-		private static final int kLeftStick_val = 9;
-		private static final int kRightStick_val = 10;
-		private static final int kLTrigger_val = 11;
-		private static final int kRTrigger_val = 12;
+		private static final int kA_val = 0;
+		private static final int kB_val = 1;
+		private static final int kX_val = 2;
+		private static final int kY_val = 3;
+		private static final int kL_val = 4;
+		private static final int kR_val = 5;
+		private static final int kBack_val = 6;
+		private static final int kStart_val = 7;
+		private static final int kLeftStick_val = 8;
+		private static final int kRightStick_val = 9;
+		private static final int kLTrigger_val = 10;
+		private static final int kRTrigger_val = 11;
 				
 		private ButtonType (int value) {
 			this.value = value;
@@ -197,8 +197,14 @@ public class XboxController  extends GenericHID implements IInputOutput {
 		public boolean getYButton() {
 			return getButton(ButtonType.kY);//BA 16:35
 		}
-
 		
+		public boolean getRButton() {
+			return getButton(ButtonType.kR);
+		}
+		
+		public boolean getLButton() {
+			return getButton(ButtonType.kL);
+		}
 		public JoystickButton getRButtonRef() {
 			//return getButton(ButtonType.kY);
 			return new JoystickButton(this, ButtonType.kR_val);

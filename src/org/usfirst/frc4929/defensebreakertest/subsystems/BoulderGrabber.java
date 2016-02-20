@@ -42,8 +42,12 @@ public class BoulderGrabber extends Subsystem {
     }
 
     
-    public void gatherBoulder() {
+    public void startGatherer() {
     	this.bouldershootermotor.set(Robot.gatherSpeed);
+    }
+    
+    public void stopGatherer() {
+    	this.bouldershootermotor.set(0);
     }
 }
 

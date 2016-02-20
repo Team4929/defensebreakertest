@@ -14,7 +14,6 @@ package org.usfirst.frc4929.defensebreakertest.commands;
 import edu.wpi.first.wpilibj.command.Command;
 
 import org.usfirst.frc4929.defensebreakertest.Robot;
-import org.usfirst.frc4929.defensebreakertest.subsystems.ShooterLift;
 
 /**
  *
