@@ -66,7 +66,9 @@ public class Shoot extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
+    	//Timer.delay(.5);
     	Robot.boulderShooter.stopShooter();
+    	Robot.boulderShooter.stopKick();
     }
 
     // Called when another command which requires one or more of the same

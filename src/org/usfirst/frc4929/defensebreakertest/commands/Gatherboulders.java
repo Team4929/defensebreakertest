@@ -23,7 +23,7 @@ public class Gatherboulders extends Command {
 	
 	private Timer timer;
 	
-	final double stopSeconds = new Double(2).doubleValue();
+	final double stopSeconds = new Double(3).doubleValue();
 
     public Gatherboulders() {
         // Use requires() here to declare subsystem dependencies
