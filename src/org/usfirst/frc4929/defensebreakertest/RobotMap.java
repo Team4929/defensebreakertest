@@ -86,8 +86,8 @@ public class RobotMap {
         drivetrainRobotDrive41.setSensitivity(0.5);
         drivetrainRobotDrive41.setMaxOutput(1.5);
         
-        boulderGrabberLimitSwitch1 = new DigitalInput(0);
-        LiveWindow.addSensor("Boulder Grabber", "Limit Switch 1", boulderGrabberLimitSwitch1);
+        //boulderGrabberLimitSwitch1 = new DigitalInput(0);
+        //LiveWindow.addSensor("Boulder Grabber", "Limit Switch 1", boulderGrabberLimitSwitch1);
         
         boulderGrabbershootermotor = new Victor(7);
         LiveWindow.addActuator("Boulder Grabber", "left shooter motor", (Victor) boulderGrabbershootermotor);

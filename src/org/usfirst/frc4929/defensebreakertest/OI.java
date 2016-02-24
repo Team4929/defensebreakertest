@@ -72,8 +72,6 @@ public class OI {
 
 	    
         // SmartDashboard Buttons
-        SmartDashboard.putData("Autonomous Command", new AutonomousCommand());
-
         SmartDashboard.putData("Gatherboulder", new Gatherboulders());
 
         SmartDashboard.putData("Shoot", new Shoot());
