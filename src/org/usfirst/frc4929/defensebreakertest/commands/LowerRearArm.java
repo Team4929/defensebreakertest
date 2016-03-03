@@ -19,9 +19,9 @@ import org.usfirst.frc4929.defensebreakertest.subsystems.Arms;
 /**
  *
  */
-public class  LiftRearArm extends Command {
+public class  LowerRearArm extends Command {
 
-    public LiftRearArm() {
+    public LowerRearArm() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
 
@@ -37,7 +37,7 @@ public class  LiftRearArm extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.arms.liftArms();;
+    	Robot.arms.lowerArms();
     }
 
     // Make this return true when this Command no longer needs to run execute()

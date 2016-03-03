@@ -62,6 +62,8 @@ public class OI {
 	private Button raiseShooterButton;
 	private Button gatherBoulderButton;
 	private Button shootBoulderButton;
+	private Button liftArmsButton;
+	private Button lowerArmsButton;
 	
 	
     public OI() {
@@ -92,12 +94,16 @@ public class OI {
 		raiseShooterButton = new JoystickButton(xBoxController, XboxController.ButtonType.kR.value);
 		gatherBoulderButton = new JoystickButton(xBoxController, XboxController.ButtonType.kB.value);
 		shootBoulderButton = new JoystickButton(xBoxController, XboxController.ButtonType.kA.value);
+		liftArmsButton = new JoystickButton(xBoxController, XboxController.ButtonType.kY.value);
+		lowerArmsButton = new JoystickButton(xBoxController, XboxController.ButtonType.kX.value);
 		
 		//assign commands to buttons
 		lowerShooterButton.whileHeld(new LowerShooter());
 		raiseShooterButton.whileHeld(new LiftShooter());
 		gatherBoulderButton.whenPressed(new Gatherboulders());
 		shootBoulderButton.whenPressed(new Shoot());
+		liftArmsButton.whileHeld(new LiftRearArm());
+		lowerArmsButton.whileHeld(new LowerRearArm());
 		//xBoxController.getXButtonRef().whileHeld(new Kicker());
          
         

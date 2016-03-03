@@ -5,7 +5,7 @@ import org.usfirst.frc4929.defensebreakertest.RobotMap;
 import edu.wpi.first.wpilibj.SpeedController;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-public class arms extends Subsystem {
+public class Arms extends Subsystem {
     
 	 SpeedController armMotor = RobotMap.armMotor;
 	
@@ -13,15 +13,15 @@ public class arms extends Subsystem {
 	
 	}
 	
-	public void liftShooter() {
+	public void liftArms() {
     	this.armMotor.set(Robot.armLiftSpeed);
     }
     
-    public void lowerShooter() {
+    public void lowerArms() {
     	this.armMotor.set(-Robot.armLiftSpeed);
     }
 
-	public void stopShooterLift() {
+	public void stopArms() {
 		
 		this.armMotor.set(0);
 	}
